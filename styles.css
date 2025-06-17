@@ -1,16 +1,31 @@
 h1 {
     font-size: 60px;
     text-align: center;
-    font-family:
-        "Lexend", sans-serif;
+    font-family: "Lexend";
     color: #A08963
 }
 
 ul {
     padding: 0 20px 20px 20px;
+    font-family: "Lexend";
+}
+
+.cabecalho .titulo {
+    font-size: 36px; /*o tamanho não está sendo alterado*/
+}
+
+.cabecalho {
+    display: flex;
+}
+
+footer {
+    background-color: #A08963;
+    color: white;
+    font-family: "Lexend";
 }
 
 /*
 body {
     background-color: #C9B194
 }
+*/
