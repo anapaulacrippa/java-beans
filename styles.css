@@ -1,27 +1,63 @@
-h1 {
-    font-size: 60px;
-    text-align: center;
-    font-family: "Lexend";
-    color: #A08963
-}
-
-ul {
-    padding: 0 20px 20px 20px;
-    font-family: "Lexend";
-}
-
-.cabecalho .titulo {
-    font-size: 36px; /*o tamanho não está sendo alterado*/
+body, html { /* remove as "bordas" ao redor das imagens */
+  margin: 0;
+  padding: 0;
 }
 
 .cabecalho {
     display: flex;
+    justify-content: space-between; /* espalha horizontalmente pelo tamanho da tela */
+    align-items: center;
+    padding: 10px 40px 10px;
+    text-align: center;
+    font-family: "Lexend";
+    color: #A08963;
 }
+
+.logo {
+    width: 50px;
+}
+
+.menu ul {
+    list-style: none;  /* remove a bolinha de item */
+    display: flex;  /* alinhados horizontalmente */
+    font-size: 15px;
+    gap: 68px;
+    margin: 10; /* margem depois que acaba essa classe */
+}
+
+.menu .icones {
+    width: 18px;
+}
+
+.separador {
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+.visao-geral {
+    width: 100%;  /* faz a imagem ocupar toda a tela */
+    height: auto;  /* não distorce a imagem */
+    display: block;
+}
+
+.sobre .nosso-cafe {
+    display: flex;
+    background-color: #C9B194;
+    align-items: center;  /* alinhamento vertical */
+}
+
+.sobre .nosso-ambiente {
+    background-color: #C9B194;
+}
+
+
 
 footer {
     background-color: #A08963;
     color: white;
     font-family: "Lexend";
+    display: flex;
 }
 
 /*
