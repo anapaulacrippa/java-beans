@@ -22,7 +22,7 @@ body, html { /* remove as "bordas" ao redor das imagens */
     display: flex;  /* alinhados horizontalmente */
     font-size: 15px;
     gap: 68px;
-    margin: 10; /* margem depois que acaba essa classe */
+    margin: 10;  /* margem depois que acaba essa classe */
 }
 
 .menu .icones {
@@ -41,14 +41,38 @@ body, html { /* remove as "bordas" ao redor das imagens */
     display: block;
 }
 
+.sobre {
+    font-family: "Lexend";
+}
+
 .sobre .nosso-cafe {
     display: flex;
+    align-items: stretch;  /* garante que os filhos tenham o mesmo tamanho */
     background-color: #C9B194;
-    align-items: center;  /* alinhamento vertical */
+}
+
+.nosso-cafe .imagem {
+    width: 524;
+    height: 346;
+}
+
+.nosso-cafe .texto {
+    padding: 50px 50px;
+    margin: 50px;
+}
+
+.nosso-cafe .texto .titulo {
+    font-size: 24px;
+}
+
+.nosso-cafe .texto .paragrafo {
+    font-size: 16px;
 }
 
 .sobre .nosso-ambiente {
     background-color: #C9B194;
+    display: flex;
+    align-items: stretch;
 }
 
 
@@ -57,11 +81,24 @@ footer {
     background-color: #A08963;
     color: white;
     font-family: "Lexend";
+    font-weight: bold;
     display: flex;
+    align-items: center;
+
 }
 
-/*
-body {
-    background-color: #C9B194
+footer .esq {
+    width: 24px;
+    height: 24px;
+    font-size: 24;
 }
-*/
+
+footer .esq .logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+footer .dir {
+    font-size: 0.9em;
+}
